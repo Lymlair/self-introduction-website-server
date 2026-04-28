@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express();
 const port = 3001;
+const cors = require("cors");
+app.use(cors());
 
 // 菜单数据结构与 antd Menu 的 MenuItem 类型匹配
 const menuItems = [
